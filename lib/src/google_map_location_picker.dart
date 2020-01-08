@@ -403,7 +403,7 @@ class LocationPickerState extends State<LocationPicker> {
       ],
       child: Builder(builder: (context) {
         return Scaffold(
-          extendBodyBehindAppBar: true,
+//          extendBodyBehindAppBar: true,
           appBar: AppBar(
             iconTheme: Theme.of(context).iconTheme,
             elevation: 0,

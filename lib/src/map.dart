@@ -208,7 +208,7 @@ class MapPickerState extends State<MapPicker> {
                         builder: (context, address) {
                           _address = address;
                           return Text(
-                            address ?? 'Unnamed place',
+                            address ?? "${_currentPosition.latitude}  ${_currentPosition.longitude}",//'Unnamed place',
                             style: TextStyle(fontSize: 18),
                           );
                         }),
