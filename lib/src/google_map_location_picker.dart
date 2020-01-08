@@ -409,6 +409,7 @@ class LocationPickerState extends State<LocationPicker> {
             elevation: 0,
             backgroundColor: widget.appBarColor,
             key: appBarKey,
+title: Text("Location"),
 //            title: SearchInput(
 //              (input) => searchPlace(input),
 //              key: searchInputKey,
