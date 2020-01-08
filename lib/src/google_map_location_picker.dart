@@ -419,7 +419,7 @@ class LocationPickerState extends State<LocationPicker> {
             widget.apiKey,
             initialCenter: widget.initialCenter,
             requiredGPS: widget.requiredGPS,
-            myLocationButtonEnabled: widget.myLocationButtonEnabled,
+            myLocationButtonEnabled: true,
             layersButtonEnabled: widget.layersButtonEnabled,
             mapStylePath: widget.mapStylePath,
             appBarColor: widget.appBarColor,

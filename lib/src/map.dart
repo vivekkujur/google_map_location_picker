@@ -380,6 +380,7 @@ class _MapFabs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Container(
       alignment: Alignment.topRight,
       margin: const EdgeInsets.only(top: kToolbarHeight + 24, right: 8),
