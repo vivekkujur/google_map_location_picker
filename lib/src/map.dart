@@ -126,14 +126,16 @@ class MapPickerState extends State<MapPicker> {
           return const Center(child: CircularProgressIndicator());
 
         return buildMap();
-      }),bottomNavigationBar: Column(
-      mainAxisSize:MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: <Widget>[
-          Container(
-              alignment:Alignment.bottomCenter,child: locationCard()),
-        ],
-      ),
+      })
+      ,
+//      bottomNavigationBar: Column(
+//      mainAxisSize:MainAxisSize.min,
+//        mainAxisAlignment: MainAxisAlignment.end,
+//        children: <Widget>[
+//          Container(
+//              alignment:Alignment.bottomCenter,child: locationCard()),
+//        ],
+//      ),
     );
   }
 
@@ -183,6 +185,14 @@ class MapPickerState extends State<MapPicker> {
             onMyLocationPressed: _initCurrentLocation,
           ),
           pin(),
+          Column(
+            mainAxisSize:MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: <Widget>[
+              Container(
+                  alignment:Alignment.bottomCenter,child: locationCard()),
+            ],
+          )
 //          locationCard(),
         ],
       ),
