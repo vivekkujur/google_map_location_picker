@@ -126,7 +126,14 @@ class MapPickerState extends State<MapPicker> {
           return const Center(child: CircularProgressIndicator());
 
         return buildMap();
-      }),bottomNavigationBar: locationCard(),
+      }),bottomNavigationBar: Column(
+      mainAxisSize:MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: <Widget>[
+          Container(
+              alignment:Alignment.bottomCenter,child: locationCard()),
+        ],
+      ),
     );
   }
 
