@@ -18,6 +18,7 @@ import 'package:provider/provider.dart';
 import 'model/location_result.dart';
 
 class MapPicker extends StatefulWidget {
+
   const MapPicker(
     this.apiKey, {
     Key key,
@@ -125,7 +126,7 @@ class MapPickerState extends State<MapPicker> {
           return const Center(child: CircularProgressIndicator());
 
         return buildMap();
-      }),
+      }),bottomNavigationBar: locationCard(),
     );
   }
 
@@ -167,6 +168,7 @@ class MapPickerState extends State<MapPicker> {
             mapType: _currentMapType,
             myLocationEnabled: true,
           ),
+
           _MapFabs(
             myLocationButtonEnabled: widget.myLocationButtonEnabled,
             layersButtonEnabled: widget.layersButtonEnabled,
@@ -174,7 +176,7 @@ class MapPickerState extends State<MapPicker> {
             onMyLocationPressed: _initCurrentLocation,
           ),
           pin(),
-          locationCard(),
+//          locationCard(),
         ],
       ),
     );
@@ -189,6 +191,7 @@ class MapPickerState extends State<MapPicker> {
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
           child: Consumer<LocationProvider>(
               builder: (context, locationProvider, _) {
+
             return Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(

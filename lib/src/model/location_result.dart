@@ -10,7 +10,12 @@ class LocationResult {
   /// Latitude/Longitude of the selected location.
   LatLng latLng;
 
-  LocationResult({this.latLng, this.address});
+  String name;
+  String completeAddress;
+  String mobileNumber;
+
+  LocationResult({this.latLng, this.address, this.name, this.completeAddress, this.mobileNumber});
+
 
   @override
   String toString() {
